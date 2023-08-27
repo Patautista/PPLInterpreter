@@ -21,5 +21,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="program.ppl" />
+    <None Include="sum.ppl" />
+    <None Include="product.ppl" />
+    <None Include="power.ppl" />
   </ItemGroup>
 </Project>

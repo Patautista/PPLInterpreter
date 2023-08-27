@@ -1,0 +1,15 @@
+* infix product.ppl
+
+program
+if x1 != 0 goto h
+goto e
+[h]
+if x2 != 0 goto i
+y <- y + 1
+goto e
+[i]
+y <- y + 1
+[k]
+y <- y * x1
+x2 <- x2 - 1
+if x2 != 0 goto k

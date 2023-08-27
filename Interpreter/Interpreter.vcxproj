@@ -130,7 +130,10 @@
     <ClCompile Include="Interpreter.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="power.ppl" />
+    <None Include="product.ppl" />
     <None Include="program.ppl" />
+    <None Include="sum.ppl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

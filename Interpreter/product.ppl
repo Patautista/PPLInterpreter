@@ -1,0 +1,9 @@
++ infix sum.ppl
+
+program
+if x1 != 0 goto h
+goto e
+[h]
+y <- y + x2
+x1 <- x1 - 1
+if x1 != 0 goto h
