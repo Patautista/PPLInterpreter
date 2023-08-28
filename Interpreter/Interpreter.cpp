@@ -48,7 +48,7 @@ std::map<std::string, Macro> importMacrosFromFile(const std::string& filename, s
 
 		ifstream sourceFile(macroSourceFilename);
 		if (!sourceFile.is_open()) {
-			std::cerr << "Error: Unable to open macro source file." << std::endl;
+			//std::cerr << "Error: Unable to open macro source file." << std::endl;
 			return macros;
 		}
 		if (macroType == "infix") {
@@ -183,8 +183,8 @@ int executePPL(const std::string& filename, std::map<std::string, int> variables
 		else if (tokens[0] == "goto" && tokens[1] == "e") {
 			return variables["y"];
 		}
-		else if (macros.find(tokens[0]) != macros.end() && macros[op].getSource() != filename) {
-			Macro macro = macros[op];
+		else if (macros.find(tokens[0]) != macros.end() && macros[tokens[0]].getSource() != filename) {
+			Macro macro = macros[tokens[0]];
 			if (macro.getType() == Macro::Type::INFIX) {
 				// Process infix macro
 				// Example: v + v
@@ -216,7 +216,7 @@ int main() {
 	std::map<std::string, int> variables;
 	variables["x1"] = 0;
 	variables["x2"] = 0;
-	std::cout << "\n" << executePPL(filename, variables);
+	executePPL(filename, variables);
 	system("pause");
 	return 0;
 }
