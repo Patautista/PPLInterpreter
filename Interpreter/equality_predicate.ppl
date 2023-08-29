@@ -1,0 +1,10 @@
+program (2)
+if x1 != 0 goto h
+[h]
+x1 <- x1 - 1
+x2 <- x2 - 1
+if x1 != 0 goto h
+if x2 != 0 goto k
+goto e
+[k]
+y <- y  + 1

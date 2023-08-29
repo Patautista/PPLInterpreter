@@ -24,5 +24,6 @@
     <None Include="sum.ppl" />
     <None Include="product.ppl" />
     <None Include="power.ppl" />
+    <None Include="equality_predicate.ppl" />
   </ItemGroup>
 </Project>

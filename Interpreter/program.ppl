@@ -1,11 +1,7 @@
-^ infix power.ppl
+P function equality_predicate.ppl
 
-program
+program (2)
 x1 <- x1 + 1
 x1 <- x1 + 1
-x1 <- x1 + 1
 x2 <- x2 + 1
-x2 <- x2 + 1
-x2 <- x2 + 1
-x2 <- x2 + 1
-y <- x2 ^ x1
+if P(x1 x2)

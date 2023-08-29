@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="power.ppl" />
+    <None Include="equality_predicate.ppl" />
     <None Include="product.ppl" />
     <None Include="program.ppl" />
     <None Include="sum.ppl" />
