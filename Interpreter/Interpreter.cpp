@@ -111,6 +111,13 @@ private:
 
 		std::string line;
 
+		for (int i = 0; i < _inputSize; i++) {
+			// initialize variables
+			if (_variables.find("x" + to_string(i + 1)) != _variables.end()) {
+				_variables["x" + to_string(i + 1)] = 0;
+			}
+		}
+
 		bool program_start = false;
 		// Read the file and store labels and program lines
 		while (std::getline(inputFile, line)) {
