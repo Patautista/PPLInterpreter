@@ -136,6 +136,9 @@
     <None Include="program.ppl" />
     <None Include="sum.ppl" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Interpreter.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

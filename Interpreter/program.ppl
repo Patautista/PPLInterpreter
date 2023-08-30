@@ -1,7 +1,7 @@
 P function equality_predicate.ppl
 
-program (2)
-x1 <- x1 + 1
+program (3)
 x1 <- x1 + 1
 x2 <- x2 + 1
-if P(x1 x2)
+x2 <- x2 + 1
+x3 <- P(x2 x1)

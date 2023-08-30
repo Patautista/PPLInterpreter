@@ -26,4 +26,9 @@
     <None Include="power.ppl" />
     <None Include="equality_predicate.ppl" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Interpreter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
